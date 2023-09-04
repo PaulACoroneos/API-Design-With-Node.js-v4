@@ -1,0 +1,23 @@
+{
+  "name": "api-design-with-node.js-v4",
+  "version": "1.0.0",
+  "description": "API Design With Node.js v4 from frontendmasters",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PaulACoroneos/API-Design-With-Node.js-v4.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PaulACoroneos/API-Design-With-Node.js-v4/issues"
+  },
+  "homepage": "https://github.com/PaulACoroneos/API-Design-With-Node.js-v4#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
