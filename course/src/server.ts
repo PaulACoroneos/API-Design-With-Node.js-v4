@@ -24,14 +24,14 @@ app.use((req, res, next) => {
   next();
 })
 
-// app.get('/', (req, res) => {
-//   console.log('hello from express');
-//   res.status(200);
-//   res.json({ message: 'hello' })
-// })
+app.get('/', (req, res) => {
+  console.log('hello from express');
+  res.status(200);
+  res.json({ message: 'hello' })
+})
 
-// app.use('/api', protect, router);
-// app.post('/user', createNewUser)
+app.use('/api', protect, router);
+app.post('/user', createNewUser)
 app.post('/signin', signin)
 
 export default app
