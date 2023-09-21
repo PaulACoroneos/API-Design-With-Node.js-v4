@@ -34,4 +34,17 @@ router.put('/updatepoint/:id', body('name').optional().isString(), body('descrip
 router.post('/updatepoint', body('name').isString(), body('description').isString(), body('updateId').exists().isString(), createUpdatePoint)
 router.delete('/updatepoint/:id', deleteUpdatePoint)
 
+router.use((err, req, res, next) => {
+  if (err.type === 'auth') {
+    res.status(401).json({ message: 'Unauthorized' })
+  }
+  else if (err.type === 'input') {
+    res.status(400).json({ message: 'Invalid input' })
+  }
+  else {
+    res.status.json({ message: 'That our fault' })
+  }
+})
+
+
 export default router
